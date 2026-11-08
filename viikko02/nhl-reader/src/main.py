@@ -15,7 +15,9 @@ def main():
 
     for player in players:
         if player.nationality == "FIN":
-            print(f"{player.name} team {player.team} goals {player.goals} assists {player.assists}")
-
+            points = player.goals + player.assists
+            print(f"{player.name:20} {player.team:15} "
+                  f"{player.goals} + {player.assists} = {points}")
+            
 if __name__ == "__main__":
     main()
